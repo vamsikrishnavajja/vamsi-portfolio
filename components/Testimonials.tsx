@@ -51,98 +51,98 @@
 //   },
 // ];
 
-// export default function Testimonials() {
-//   return (
-//     <section id="testimonials" style={{ padding: '120px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--border)' }}>
-//       <div className="section-container">
-//         <div style={{ marginBottom: '60px', textAlign: 'center' }}>
-//           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '16px' }}>
-//             <div style={{ width: '40px', height: '2px', background: 'var(--gradient-1)' }} />
-//             <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '2px' }}>
-//               Testimonials
-//             </span>
-//             <div style={{ width: '40px', height: '2px', background: 'var(--gradient-1)' }} />
-//           </div>
-//           <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '800', letterSpacing: '-1.5px', lineHeight: '1.15', marginBottom: '16px' }}>
-//             What Leaders{' '}
-//             <span className="text-gradient">Say</span>
-//           </h2>
-//           <p style={{ fontSize: '17px', color: 'var(--text-secondary)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.7' }}>
-//             Feedback from engineering leaders and executives at the enterprises I&apos;ve partnered with.
-//           </p>
-//         </div>
+export default function Testimonials() {
+  return (
+    <section id="testimonials" style={{ padding: '120px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--border)' }}>
+      <div className="section-container">
+        <div style={{ marginBottom: '60px', textAlign: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '16px' }}>
+            <div style={{ width: '40px', height: '2px', background: 'var(--gradient-1)' }} />
+            <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '2px' }}>
+              Testimonials
+            </span>
+            <div style={{ width: '40px', height: '2px', background: 'var(--gradient-1)' }} />
+          </div>
+          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '800', letterSpacing: '-1.5px', lineHeight: '1.15', marginBottom: '16px' }}>
+            What Leaders{' '}
+            <span className="text-gradient">Say</span>
+          </h2>
+          <p style={{ fontSize: '17px', color: 'var(--text-secondary)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.7' }}>
+            Feedback from engineering leaders and executives at the enterprises I&apos;ve partnered with.
+          </p>
+        </div>
 
-//         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }} className="testimonials-grid">
-//           {testimonials.map((t) => (
-//             <div
-//               key={t.name}
-//               className="card-glass"
-//               style={{
-//                 padding: '28px',
-//                 display: 'flex',
-//                 flexDirection: 'column',
-//                 gap: '20px',
-//                 borderTop: `2px solid ${t.color}`,
-//               }}
-//             >
-//               {/* Quote mark */}
-//               <div style={{ fontSize: '32px', lineHeight: '1', color: t.color, opacity: 0.4, fontFamily: 'Georgia, serif' }}>&ldquo;</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }} className="testimonials-grid">
+          {testimonials.map((t) => (
+            <div
+              key={t.name}
+              className="card-glass"
+              style={{
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '20px',
+                borderTop: `2px solid ${t.color}`,
+              }}
+            >
+              {/* Quote mark */}
+              <div style={{ fontSize: '32px', lineHeight: '1', color: t.color, opacity: 0.4, fontFamily: 'Georgia, serif' }}>&ldquo;</div>
 
-//               {/* Text */}
-//               <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.75', flex: 1 }}>{t.text}</p>
+              {/* Text */}
+              <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.75', flex: 1 }}>{t.text}</p>
 
-//               {/* Author */}
-//               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', paddingTop: '16px', borderTop: '1px solid var(--border)' }}>
-//                 <div style={{
-//                   width: '40px',
-//                   height: '40px',
-//                   borderRadius: '50%',
-//                   background: `${t.color}20`,
-//                   border: `1px solid ${t.color}40`,
-//                   display: 'flex',
-//                   alignItems: 'center',
-//                   justifyContent: 'center',
-//                   fontSize: '12px',
-//                   fontWeight: '700',
-//                   color: t.color,
-//                   flexShrink: 0,
-//                 }}>
-//                   {t.avatar}
-//                 </div>
-//                 <div>
-//                   <div style={{ fontSize: '14px', fontWeight: '700', color: 'var(--text-primary)' }}>{t.name}</div>
-//                   <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{t.role}</div>
-//                   <div style={{ fontSize: '11px', color: t.color, marginTop: '1px', fontWeight: '500' }}>{t.company}</div>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
+              {/* Author */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', paddingTop: '16px', borderTop: '1px solid var(--border)' }}>
+                <div style={{
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '50%',
+                  background: `${t.color}20`,
+                  border: `1px solid ${t.color}40`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '12px',
+                  fontWeight: '700',
+                  color: t.color,
+                  flexShrink: 0,
+                }}>
+                  {t.avatar}
+                </div>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: '700', color: 'var(--text-primary)' }}>{t.name}</div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{t.role}</div>
+                  <div style={{ fontSize: '11px', color: t.color, marginTop: '1px', fontWeight: '500' }}>{t.company}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-//         {/* Trust Indicators */}
-//         <div style={{ display: 'flex', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '60px', padding: '40px 0', borderTop: '1px solid var(--border)' }}>
-//           {[
-//             { value: '8+', label: 'Years Experience' },
-//             { value: '15+', label: 'Enterprise Projects' },
-//             { value: '100%', label: 'Client Satisfaction' },
-//             { value: 'C2C', label: 'Available Now' },
-//           ].map((item) => (
-//             <div key={item.label} style={{ textAlign: 'center' }}>
-//               <div style={{ fontSize: '36px', fontWeight: '800', letterSpacing: '-1px' }} className="text-gradient">{item.value}</div>
-//               <div style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '4px' }}>{item.label}</div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
+        {/* Trust Indicators */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '60px', padding: '40px 0', borderTop: '1px solid var(--border)' }}>
+          {[
+            { value: '8+', label: 'Years Experience' },
+            { value: '15+', label: 'Enterprise Projects' },
+            { value: '100%', label: 'Client Satisfaction' },
+            { value: 'C2C', label: 'Available Now' },
+          ].map((item) => (
+            <div key={item.label} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '36px', fontWeight: '800', letterSpacing: '-1px' }} className="text-gradient">{item.value}</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-muted)', marginTop: '4px' }}>{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-//       <style>{`
-//         @media (max-width: 1000px) {
-//           .testimonials-grid { grid-template-columns: 1fr 1fr !important; }
-//         }
-//         @media (max-width: 640px) {
-//           .testimonials-grid { grid-template-columns: 1fr !important; }
-//         }
-//       `}</style>
-//     </section>
-//   );
-// }
+      <style>{`
+        @media (max-width: 1000px) {
+          .testimonials-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 640px) {
+          .testimonials-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
+    </section>
+  );
+}
