@@ -1,8 +1,8 @@
 # Vamsi Vajja — AI/ML Engineer Portfolio
 
-Production-ready personal portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.
+Productionm ready personal portfolio website built with Next.js 15, TypeScript and Tailwind CSS.
 
-## 🚀 Quick Start
+# Quick Start
 
 ```bash
 npm install
@@ -11,7 +11,7 @@ npm run build     # Production build
 npm run start     # Serve production build
 ```
 
-## 📁 Project Structure
+# Project Structure
 
 ```
 vamsi-portfolio/
@@ -21,7 +21,6 @@ vamsi-portfolio/
 │   └── page.tsx           # Main page (assembles all sections)
 ├── components/
 │   ├── Navigation.tsx     # Sticky nav with active section tracking
-│   ├── Hero.tsx           # Animated canvas background + orbital viz
 │   ├── About.tsx          # Story, timeline, industry pillars
 │   ├── Skills.tsx         # Tabbed skill bars + tech badges
 │   ├── Experience.tsx     # Expandable enterprise experience cards
@@ -34,18 +33,18 @@ vamsi-portfolio/
     └── resume.pdf         # ← REPLACE WITH YOUR ACTUAL RESUME
 ```
 
-## ✏️ Personalizing the Site
+# Personalizing the Site
 
-### 1. Replace your resume
+# 1. Replace your resume
 Drop your PDF at `public/resume.pdf` — the Download Resume button links to it automatically.
 
-### 2. Update your LinkedIn URL
+# 2. Update your LinkedIn URL
 Search for `linkedin.com/in/vamsivajja` and replace with your actual profile URL.
 
-### 3. Update your email
+# 3. Update your email
 Search for `vamsi.vajja@email.com` and replace with your real email.
 
-### 4. Connect the contact form
+# 4. Connect the contact form
 In `components/Contact.tsx`, replace the mock `handleSubmit` with a real service:
 
 **Option A — Formspree (free, easiest):**
@@ -66,7 +65,7 @@ Then use `emailjs.send(serviceId, templateId, form, publicKey)`.
 **Option C — Next.js API Route:**
 Create `app/api/contact/route.ts` using Resend, SendGrid, or Nodemailer.
 
-## 🌐 Deployment
+# Deployment
 
 ### Vercel (Recommended — free, zero config)
 ```bash
@@ -81,7 +80,7 @@ npm run build
 # Deploy the .next folder or connect via GitHub
 ```
 
-### Self-hosted (Docker)
+### Self hosted (Docker)
 ```dockerfile
 FROM node:22-alpine
 WORKDIR /app
@@ -91,10 +90,10 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-## 🔍 SEO Configuration
+# SEO Configuration
 Metadata is in `app/layout.tsx`. Update `openGraph.url` with your deployed domain.
 
-## 🎨 Customizing Colors
+# Customizing Colors
 All brand colors are CSS variables in `app/globals.css`:
 ```css
 --accent-blue: #4f8eff;
@@ -103,7 +102,7 @@ All brand colors are CSS variables in `app/globals.css`:
 --accent-emerald: #10b981;
 ```
 
-## 📦 Dependencies
+#Depen dencies
 - **Next.js 15** — Framework
 - **TypeScript** — Type safety
 - **Tailwind CSS 4** — Utility styles
