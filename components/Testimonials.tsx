@@ -1,55 +1,55 @@
-// 'use client';
+'use client';
 
-// const testimonials = [
-//   {
-//     name: 'Sarah Chen',
-//     role: 'Director of AI Engineering',
-//     company: 'Financial Services Enterprise',
-//     avatar: 'SC',
-//     color: '#4f8eff',
-//     text: "Vamsi architected our entire GenAI platform from scratch. What impressed me most was his ability to translate ambiguous business requirements into a concrete, production-ready AI architecture in record time. The RAG system he built reduced analyst workload by over 60% — that's real impact.",
-//   },
-//   {
-//     name: 'Michael Torres',
-//     role: 'VP of Data & Analytics',
-//     company: 'Retail Technology Group',
-//     avatar: 'MT',
-//     color: '#8b5cf6',
-//     text: 'Working with Vamsi on our demand forecasting initiative was a transformative experience. He brings a rare combination of deep ML research knowledge and practical engineering instincts. His models outperformed our previous vendor solution within the first month of deployment.',
-//   },
-//   {
-//     name: 'Priya Nair',
-//     role: 'Engineering Manager',
-//     company: 'Enterprise AI Platform',
-//     avatar: 'PN',
-//     color: '#22d3ee',
-//     text: "Vamsi&apos;s expertise in multi-agent systems is genuinely ahead of the curve. He built an agentic workflow that our team thought would take 6 months — he delivered a production-ready prototype in 6 weeks. His code quality and system design documentation set a new bar for the team.",
-//   },
-//   {
-//     name: 'David Kim',
-//     role: 'Chief Data Officer',
-//     company: 'Mobility & Technology Firm',
-//     avatar: 'DK',
-//     color: '#10b981',
-//     text: "Vamsi's AI quality monitoring platform gave us the confidence to deploy LLMs in customer-facing products for the first time. The automated evaluation framework caught hallucinations we hadn't even thought to test for. Exceptional depth, exceptional delivery.",
-//   },
-//   {
-//     name: 'Anjali Sharma',
-//     role: 'Senior Product Manager, AI',
-//     company: 'Banking Technology',
-//     avatar: 'AS',
-//     color: '#f59e0b',
-//     text: "What sets Vamsi apart is that he understands the business context, not just the technology. He asked better questions about our compliance constraints than our internal legal team. The GenAI system he delivered is now central to our operations, handling thousands of queries daily.",
-//   },
-//   {
-//     name: 'James Hoffman',
-//     role: 'Principal Software Architect',
-//     company: 'Supply Chain Enterprise',
-//     avatar: 'JH',
-//     color: '#ec4899',
-//     text: "I've worked with many ML engineers over the years. Vamsi is exceptional because he thinks in systems — data pipelines, model monitoring, CI/CD, cost optimization — all at once. Our MLOps platform went from zero to supporting 20+ production models under his technical leadership.",
-//   },
-// ];
+const testimonials = [
+  {
+    name: 'Sarah Chen',
+    role: 'Director of AI Engineering',
+    company: 'Financial Services Enterprise',
+    avatar: 'SC',
+    color: '#4f8eff',
+    text: "Vamsi architected our entire GenAI platform from scratch. What impressed me most was his ability to translate ambiguous business requirements into a concrete, production-ready AI architecture in record time. The RAG system he built reduced analyst workload by over 60% — that's real impact.",
+  },
+  {
+    name: 'Michael Torres',
+    role: 'VP of Data & Analytics',
+    company: 'Retail Technology Group',
+    avatar: 'MT',
+    color: '#8b5cf6',
+    text: 'Working with Vamsi on our demand forecasting initiative was a transformative experience. He brings a rare combination of deep ML research knowledge and practical engineering instincts. His models outperformed our previous vendor solution within the first month of deployment.',
+  },
+  {
+    name: 'Priya Nair',
+    role: 'Engineering Manager',
+    company: 'Enterprise AI Platform',
+    avatar: 'PN',
+    color: '#22d3ee',
+    text: "Vamsi&apos;s expertise in multi-agent systems is genuinely ahead of the curve. He built an agentic workflow that our team thought would take 6 months — he delivered a production-ready prototype in 6 weeks. His code quality and system design documentation set a new bar for the team.",
+  },
+  {
+    name: 'David Kim',
+    role: 'Chief Data Officer',
+    company: 'Mobility & Technology Firm',
+    avatar: 'DK',
+    color: '#10b981',
+    text: "Vamsi's AI quality monitoring platform gave us the confidence to deploy LLMs in customer-facing products for the first time. The automated evaluation framework caught hallucinations we hadn't even thought to test for. Exceptional depth, exceptional delivery.",
+  },
+  {
+    name: 'Anjali Sharma',
+    role: 'Senior Product Manager, AI',
+    company: 'Banking Technology',
+    avatar: 'AS',
+    color: '#f59e0b',
+    text: "What sets Vamsi apart is that he understands the business context, not just the technology. He asked better questions about our compliance constraints than our internal legal team. The GenAI system he delivered is now central to our operations, handling thousands of queries daily.",
+  },
+  {
+    name: 'James Hoffman',
+    role: 'Principal Software Architect',
+    company: 'Supply Chain Enterprise',
+    avatar: 'JH',
+    color: '#ec4899',
+    text: "I've worked with many ML engineers over the years. Vamsi is exceptional because he thinks in systems — data pipelines, model monitoring, CI/CD, cost optimization — all at once. Our MLOps platform went from zero to supporting 20+ production models under his technical leadership.",
+  },
+];
 
 export default function Testimonials() {
   return (
