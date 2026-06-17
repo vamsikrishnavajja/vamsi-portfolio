@@ -25,30 +25,6 @@ const testimonials = [
     color: '#22d3ee',
     text: "Vamsi&apos;s expertise in multi-agent systems is genuinely ahead of the curve. He built an agentic workflow that our team thought would take 6 months — he delivered a production-ready prototype in 6 weeks. His code quality and system design documentation set a new bar for the team.",
   },
-  {
-    name: 'David Kim',
-    role: 'Chief Data Officer',
-    company: 'Mobility & Technology Firm',
-    avatar: 'DK',
-    color: '#10b981',
-    text: "Vamsi's AI quality monitoring platform gave us the confidence to deploy LLMs in customer-facing products for the first time. The automated evaluation framework caught hallucinations we hadn't even thought to test for. Exceptional depth, exceptional delivery.",
-  },
-  {
-    name: 'Anjali Sharma',
-    role: 'Senior Product Manager, AI',
-    company: 'Banking Technology',
-    avatar: 'AS',
-    color: '#f59e0b',
-    text: "What sets Vamsi apart is that he understands the business context, not just the technology. He asked better questions about our compliance constraints than our internal legal team. The GenAI system he delivered is now central to our operations, handling thousands of queries daily.",
-  },
-  {
-    name: 'James Hoffman',
-    role: 'Principal Software Architect',
-    company: 'Supply Chain Enterprise',
-    avatar: 'JH',
-    color: '#ec4899',
-    text: "I've worked with many ML engineers over the years. Vamsi is exceptional because he thinks in systems — data pipelines, model monitoring, CI/CD, cost optimization — all at once. Our MLOps platform went from zero to supporting 20+ production models under his technical leadership.",
-  },
 ];
 
 export default function Testimonials() {
