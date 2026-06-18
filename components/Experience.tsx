@@ -153,19 +153,6 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
         onClick={() => setExpanded(!expanded)}
       >
         <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-          <div style={{
-            width: '52px',
-            height: '52px',
-            borderRadius: '14px',
-            background: `${exp.color}15`,
-            border: `1px solid ${exp.color}30`,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: '24px',
-            flexShrink: 0,
-          }}>
-          </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '4px' }}>
               <h3 style={{ fontSize: '18px', fontWeight: '700', letterSpacing: '-0.5px' }}>{exp.company}</h3>
