@@ -7,7 +7,6 @@ const experiences = [
   {
     id: 1,
     company: 'Barclays',
-    logo: '🏦',
     role: 'Senior AI/ML Engineer',
     period: 'Jan 2024 – Present',
     type: 'Contract',
@@ -39,7 +38,6 @@ const experiences = [
   {
     id: 2,
     company: 'Target',
-    logo: '🎯',
     role: 'ML Engineer',
     period: 'Aug 2022 – Jul 2023',
     type: 'Contract',
@@ -74,10 +72,9 @@ const experiences = [
   {
     id: 3,
     company: 'Uber',
-    logo: '🚗',
     role: 'Senior Data Engineer',
     period: 'May 2019 – Nov 2021',
-    type: 'Full Time',
+    type: 'Contract',
     color: '#8b5cf6',
     challenge:
       'Uber needed to process high-volume ride demand, driver availability, and geo-location signals for dynamic pricing and dispatch optimization — transitioning from legacy batch processing to a low-latency streaming architecture at massive scale.',
@@ -105,38 +102,37 @@ const experiences = [
     ],
   },
   {
-    id: 4,
-    company: 'Flipkart',
-    logo: '🛍️',
-    role: 'Python Developer',
-    period: 'Mar 2017 – Apr 2019',
-    type: 'Full Time',
-    color: '#10b981',
-    challenge:
-      'Flipkart marketplace growth depended on onboarding thousands of new sellers rapidly without compromising catalog quality. The manual moderation process created bottlenecks for product listings, image validation, and metadata checks at scale.',
-    solution:
-      'Designed a scalable self-serve seller onboarding platform using Python (Django), with asynchronous processing pipelines via Celery, Redis, and RabbitMQ. Built a rule-based validation engine for pricing guardrails, automated image quality checks with Pillow, and optimized MySQL queries with Memcached caching.',
-    tech: [
-      'Python',
-      'Django',
-      'Flask',
-      'Celery',
-      'Redis',
-      'RabbitMQ',
-      'MySQL',
-      'Memcached',
-      'Pillow',
-      'PyTest',
-      'Docker',
-      'Git',
-    ],
-    impact: [
-      { metric: '60%', label: 'Reduction in manual onboarding effort' },
-      { metric: '50k+', label: 'Daily image uploads automated via Pillow' },
-      { metric: '30%', label: 'Reduction in seller dashboard latency' },
-      { metric: '90%+', label: 'Unit test coverage with PyTest' },
-    ],
-  },
+  id: 4, // Adjust ID if needed to fit your portfolio's array order
+  company: 'eBay',
+  role: 'Python Developer',
+  period: 'Oct 2017 – Nov 2019',
+  type: 'Full Time',
+  color: '#0064d2', // eBay's signature blue color hex
+  challenge:
+    'eBay’s global marketplace scalability required high-throughput systems to process millions of cross-border merchant listings simultaneously. Legacy synchronous validation checks created significant performance bottlenecks for bulk inventory ingestion, currency localization, and policy compliance.',
+  solution:
+    'Designed an enterprise-scale bulk inventory ingestion platform using Python (Flask/Django), backed by a distributed asynchronous pipeline using Celery, Redis, and RabbitMQ to handle massive listing throughput. Built automated metadata sanitization engines and optimized database performance via PostgreSQL query tuning, sharding strategy refinements, and Memcached caching.',
+  tech: [
+    'Python',
+    'Django',
+    'Flask',
+    'Celery',
+    'Redis',
+    'RabbitMQ',
+    'PostgreSQL',
+    'Memcached',
+    'PyTest',
+    'Docker',
+    'Jenkins',
+    'Git',
+  ],
+  impact: [
+    { metric: '45%', label: 'Reduction in time-to-marketplace' },
+    { metric: '15M+', label: 'Daily updates processed via Celery pipeline' },
+    { metric: '35%', label: 'Cut in database read bottlenecks' },
+    { metric: '90%+', label: 'Test coverage maintained via PyTest' },
+  ],
+},
 ];
 
 function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
@@ -169,7 +165,6 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
             fontSize: '24px',
             flexShrink: 0,
           }}>
-            {exp.logo}
           </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '4px' }}>
