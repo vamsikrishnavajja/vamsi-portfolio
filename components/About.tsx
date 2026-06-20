@@ -1,7 +1,7 @@
 'use client';
 
 const timeline = [
-  { year: '2017', label: 'E-Commerce Engineering', text: 'Began journey at Flipkart, developing scalable backend architectures and seller self-serve portals.' },
+  { year: '2017', label: 'E-Commerce Engineering', text: 'Began journey at eBay, developing scalable backend architectures and seller self-serve portals.' },
   { year: '2019', label: 'Big Data & Mobility', text: 'Moved to Uber as a Senior Data Engineer, building real-time streaming pipelines with Kafka and Spark for market intelligence.' },
   { year: '2022', label: 'Enterprise ML & Forecasting', text: 'Joined Target, architecting production-grade demand forecasting and deep learning recommendation engines at retail scale.' },
   { year: '2023', label: 'Advanced AI Foundations', text: 'Completed Master\'s degree, deepening expertise in advanced ML architectures and predictive modeling.' },
